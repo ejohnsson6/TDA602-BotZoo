@@ -11,6 +11,7 @@ import (
 )
 
 // Variables used for command line parameters
+
 var (
 	Token string
 	log   *os.File = nil
