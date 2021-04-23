@@ -15,6 +15,9 @@ const app = new App({
 app.message(async ({ message, say }) => {
     // say() sends a message to the channel where the event was triggered
     fs.appendFileSync("log.txt", message.user + ":" + message.text + "\n");
+    if (message.text.includes("ping")) {
+        say("pong");
+    }
 });
 
 (async () => {
@@ -22,5 +25,3 @@ app.message(async ({ message, say }) => {
     const server = await app.start(process.env.PORT || 3000);
     console.log("⚡️ Bolt app is running!", server.address());
 })();
-//https://api.slack.com/apps/A0209T789RN/oauth?
-// https://api.slack.com/authentication/token-types#bot

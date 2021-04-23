@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "@slack/bolt": "^3.3.0"
-  }
+    "dependencies": {
+        "@slack/bolt": "^3.3.0"
+    },
+    "msteams": {
+        "teamsAppId": "9cdf3854-9f71-4dc7-8b79-54cea4ffd693"
+    }
 }
