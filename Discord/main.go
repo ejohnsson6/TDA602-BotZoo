@@ -1,7 +1,6 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 	"os/signal"
@@ -13,15 +12,9 @@ import (
 // Variables used for command line parameters
 
 var (
-	Token string
+	Token string   = "mq_PExw_LP5VDiRvKEMFC6H7MocNzayc"
 	log   *os.File = nil
 )
-
-func init() {
-
-	flag.StringVar(&Token, "t", "", "Bot Token")
-	flag.Parse()
-}
 
 func main() {
 
