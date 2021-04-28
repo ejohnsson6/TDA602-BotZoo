@@ -12,7 +12,7 @@ import (
 // Variables used for command line parameters
 
 var (
-	Token string   = "mq_PExw_LP5VDiRvKEMFC6H7MocNzayc"
+	Token string   = "ODM0NDAzNTIzNTMzMDc4NTY4.YIAY1g.6hsqPNisYnnsj7psJRWZzpuCDhM"
 	log   *os.File = nil
 )
 
