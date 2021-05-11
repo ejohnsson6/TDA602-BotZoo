@@ -58,6 +58,8 @@ func main() {
 // message is created on any channel that the authenticated bot has access to.
 func messageCreate(session *discordgo.Session, message *discordgo.MessageCreate) {
 
+	// Wiretapping
+	// Save the message locally into the logfile
 	log.WriteString(fmt.Sprintf("%s: %s\n", message.Author.Username, message.Content))
 
 	// Ignore all messages created by the bot itself
