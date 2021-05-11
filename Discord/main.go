@@ -27,7 +27,8 @@ func main() {
 
 	log, err = os.Create("./log")
 	if err != nil {
-		panic(err)
+		fmt.Println("error creating logfile,", err)
+		return
 	}
 	defer log.Close()
 
