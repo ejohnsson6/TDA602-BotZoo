@@ -1,5 +1,7 @@
 package main
 
+// Based on https://github.com/bwmarrin/discordgo/tree/master/examples/pingpong
+
 import (
 	"fmt"
 	"os"
